@@ -1,0 +1,56 @@
+[
+ {
+  "directory": "/home/svampis/school/ECE/calculator",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-c",
+   "src/interpreter.c",
+   "-o",
+   "build/interpreter.o"
+  ],
+  "file": "src/interpreter.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/calculator",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-c",
+   "src/lex.c",
+   "-o",
+   "build/lex.o"
+  ],
+  "file": "src/lex.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/calculator",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-o",
+   "bin/a.out",
+   "build/lex.o",
+   "build/interpreter.o",
+   "src/main.c",
+   "-lfl",
+   "-lm"
+  ],
+  "file": "src/main.c"
+ }
+]
