@@ -52,5 +52,77 @@
    "-lm"
   ],
   "file": "src/main.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/ECE-Project",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-c",
+   "src/interpreter.c",
+   "-o",
+   "build/interpreter.o"
+  ],
+  "file": "src/interpreter.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/ECE-Project",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-c",
+   "src/lex.c",
+   "-o",
+   "build/lex.o"
+  ],
+  "file": "src/lex.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/ECE-Project",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-c",
+   "src/transcendentals.c",
+   "-o",
+   "build/transcendentals.o"
+  ],
+  "file": "src/transcendentals.c"
+ },
+ {
+  "directory": "/home/svampis/school/ECE/ECE-Project",
+  "arguments": [
+   "gcc",
+   "-I./include",
+   "-I./build",
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-g",
+   "-o",
+   "bin/a.out",
+   "build/transcendentals.o",
+   "build/lex.o",
+   "build/interpreter.o",
+   "src/main.c",
+   "-lfl",
+   "-lm"
+  ],
+  "file": "src/main.c"
  }
 ]
